@@ -14,7 +14,7 @@ const defContacts = [
   { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
 ]
 
-const App = () => {
+export default function App() {
 
   const [contacts, setContacts] = useState(loadLocalStorage() ?? defContacts);
   const [filter, setFilter] = useState('');
@@ -62,5 +62,3 @@ const App = () => {
       </Section>
     </>)
 }
-
-export default App
