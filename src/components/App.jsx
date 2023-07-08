@@ -43,11 +43,8 @@ export default function App() {
   };
 
   useEffect(() => {
-    const saveData = () => {
-      saveLocalStorage(contacts);
-    }
-    saveData();
-  })
+    saveLocalStorage(contacts);
+  }, [contacts])
 
   //================================================================
 
